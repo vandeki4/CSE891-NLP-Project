@@ -21,9 +21,9 @@ def pair_wise(path1: str, path2: str) -> List[Tuple[str, str]]:
 
     file1 = ''
     file2 = ''
-    with open(path1, 'r') as f1:
+    with open(path1, 'r', encoding='utf8') as f1:
         file1 = f1.read()
-    with open(path2, 'r') as f2:
+    with open(path2, 'r', encoding='utf8') as f2:
         file2 = f2.read()
 
     file1 = file1.split('\n')
