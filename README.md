@@ -14,17 +14,18 @@ See the [dataset/](dataset) folder for download scripts.
 
 ## Baseline Model
 We used the baseline model described in this [official Tensorflow tutorial](https://www.tensorflow.org/tutorials/text/nmt_with_attention).
-We had a lot of issues with the dataset size; the tutorial uses a much smaller translation dataset, especially in vocabulary size.
-When we modified the tutorial code to use the Europarl dataset, it used a large amount of memory. We had to cut down on the model complexity
-to make it runnable on our local machine, so it didn't perform very well. That said, the entire pipeline for preprocessing, training, and evaluation
-is all in place, so it should be fairly straightforward to iterate on the model.
+We had a lot of issues with the dataset size; the tutorial uses a much smaller translation dataset, especially in vocabulary size and sentence length.
+When we modified the tutorial code to use the Europarl dataset, it used a large amount of memory and crashed. It turns out that this was primarily due to the sentence length;
+after we limited the sentences to only those with 80 tokens or less, this was less of an issue. The accuracy still isn't amazing, but this might just be
+a challenging dataset. We definitely could have trained longer too, but the whole process is fairly slow. 
+That said, the entire pipeline for preprocessing, training, and evaluation is all in place, so it should be fairly straightforward to iterate on the model.
 
-### Average BLEU Score (Baseline as of 3/12/2020):
+### Average BLEU Score (Baseline as of 3/13/2020):
 _From 0.0 to 1.0, higher is better._
 
-```0.00825 (training)```
+```0.1514 (training)```
 
-```0.00759 (validation)```
+```0.0405 (validation)```
 
 ## About ##
 Machine Translation is used to convert text from one language into another. Modern methods for solving this problem often use recurrent and/or convolutional neural networks to handle the sequential sentence structure. Recent advances have shown that attention mechanisms to handle sentence structure are sufficient to match or exceed the performance of recurrent and convolutional methods. Most MT methods use a form of beam search for efficient inference.
