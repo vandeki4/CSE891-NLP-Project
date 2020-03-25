@@ -15,11 +15,11 @@ See the [dataset/](dataset) folder for download scripts.
 
 ## Results: Average BLEU-4 Scores
 _From 0.0 to 1.0, higher is better._
-|             |  Baseline      |  Transformer  |   |   |
-|-------------|----------------|---------------|---|---|
-| Training    | ```0.1514```   |      0.346    |   |   |
-| Validation  | ```0.0405```   |   ```0.273```  |   |   |
-| Updated     | 3/13/2020      | 3/24/2020     |   |   |
+|             |  Baseline      |  Transformer  |
+|-------------|----------------|---------------|
+| Training    | ```0.1514```   |   ```0.346```  |   
+| Validation  | ```0.0405```   |   ```0.273```  |   
+| Updated     | 3/13/2020      | 3/24/2020      |   
 
 ```Transformer Training Accuracy: 0.3```
 
