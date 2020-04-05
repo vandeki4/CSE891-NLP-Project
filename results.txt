@@ -1,0 +1,15 @@
+128 Samples:
+
+BLEU (val): 0.38082310991301005 for discount 0.0 and depth 1
+BLEU (val): 0.3758610362791981 for discount 0.05 and depth 1
+BLEU (val): 0.36202745287918153 for discount 0.1 and depth 1
+BLEU (val): 0.30801489295622697 for discount 0.2 and depth 1
+BLEU (val): 0.21026525948394867 for discount 0.3 and depth 1
+BLEU (val): 0.12294977214270197 for discount 0.4 and depth 1
+BLEU (val): 0.06506445220416789 for discount 0.5 and depth 1
+BLEU (val): 0.04230988733282459 for discount 0.6 and depth 1
+BLEU (val): 0.03287434031621529 for discount 0.7 and depth 1
+
+10000 Samples:
+BLEU (val): 0.35938967865277394 for discount 0 and depth 0
+BLEU (val): 0.35938967865277394 for discount 0 and depth 0
